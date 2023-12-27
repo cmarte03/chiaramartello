@@ -1,0 +1,414 @@
+* {
+    --primary-font-color: #212121;
+    --negative-title-color: #FFFCFC;
+    --primary: #556B2F;
+    --secondary: #8FBC8F;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+  
+  body {
+    background-color: #fff;
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+  }
+
+  /*header*/
+  header {
+    display: flex;
+    /* flex-direction: column; */
+    justify-content: center;
+    align-items: center;
+    padding: 15px 0; /* Adjust the padding to reduce the gap */
+
+    position: fixed;
+    z-index: 1;
+    background-color: white;
+    margin: 0;
+    width: 100%;
+
+  }
+  
+  .title {
+    text-align: center;
+    font-size: 45px;
+    font-weight: 500;
+    color: var(--negative-title-color);
+  }
+  
+  nav {
+    display: flex;
+    align-items: center;
+}
+
+  /* .nav-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 auto;
+    text-decoration: none;
+    width: 100%;
+    max-width: 1440px;
+  } */
+  
+  
+  .nav-list {
+    display: flex;
+    text-decoration: none;
+    gap: 2rem;
+    width: 100%;
+    margin-left: 20%;
+    margin-right: 20%;
+  }
+  
+  .nav-item {
+    color: var(--primary-font-color);
+    text-decoration: none;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+    text-decoration: none;
+    width: 100%;
+  }
+  
+  .nav-item:hover {
+    text-decoration: none;
+    color: gray;
+  }
+  
+  #about {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 56px 101px 81px 16px;
+  }
+  
+  .about-content {
+    max-width: 540px;
+    order: 2;
+  }
+  
+  .about-title {
+    color: var(--primary);
+    font-size: 50px;
+    font-weight: 600;
+    line-height: 66px;
+    margin-bottom: 20px;
+    color: black;
+  }
+  
+  /*contact*/
+  .contact-me-container {
+    background-color: #A9A9A9;
+    color: white;
+  }
+
+  .contact-me{
+    margin: 20px;
+  }
+
+  .contact-me-head {
+    text-align: center;
+  }
+
+  .contact-methods-container {
+    text-align: center;
+    display: flex;
+  }
+
+  .contact-p1 {
+    width: 35%;
+    height: 20%;
+    margin: 10%;
+    text-decoration: none;
+    color: black;
+    border-radius: 30px;
+    padding: 20px;
+    background: var(--white, #FFF);
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    word-wrap: break-word;
+  }
+
+  .contact-p1 img {
+    width: 30px;
+  }
+
+  .contact-p1 p{
+    text-align: center;
+    text-decoration: none;
+    color: black;
+  }
+
+  .contact-p1 a {
+    text-align: center;
+    text-decoration: none;
+    color: gray;
+  }
+
+  .contact-p1 a:hover {
+    color: black;
+  }
+
+/*home*/
+.home-container {
+    background: url(file:///Users/chiaramartello/Desktop/home.png) center/cover;
+    height: 750px;
+    color: white;
+}
+
+
+.home-text h2, .home-text h1{
+    padding-top: 20px;
+    margin-left: 20%;
+    margin-right: 20%;
+    max-height: 200px;
+    font-family: 'Volkhov';
+    text-align: center;
+    text-shadow: 2px 2px gray;
+}
+
+h1 {
+    font-family: 'Volkhov';
+}
+
+h3 {
+    font-family: 'Poppins';
+    font-weight: 100;
+}
+
+/*contact me*/
+.about-me-container {
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+.about-me-container h1 {
+    text-align: center;
+}
+
+.about-me {
+    margin-bottom: 10%;
+    display: grid;
+    align-items: center; 
+    grid-template-columns: 1fr 1fr;
+    column-gap: 10%;
+}
+
+.about-me img {
+    width: 80%;
+    border-radius: 50%;
+    box-shadow: 10px 10px 5px gray;
+
+}
+
+/* adding */
+@media screen and (max-width: 900px) {
+    header {
+        flex-direction: column;
+    }
+
+    #menu-button {
+        display: block;
+        color: black;
+    }
+
+    #menu-button .bar {
+        background: #212121;
+    }
+
+    #myNav-list {
+        display: none;
+    }
+
+    #menu-button.active + .nav-list {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        /* justify-content: center; */
+        justify-content: space-between;
+        gap: 5px;
+    }
+
+    .nav-list a {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+#menu-button .bar {
+    width: 30px;
+    height: 3px;
+    /* background: #212121; */
+    margin: 6px 0;
+    transition: 0.4s;
+    color: white;
+}
+
+#menu-button {
+    /* display: none;  */
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+    position: relative;
+    z-index: 1000;
+}
+
+.content {
+    justify-content: center;
+    padding: 0;
+}
+
+
+nav a {
+    color: #112211;
+    text-decoration: none;
+    margin: 0 15px;
+    font-weight: 500;
+    white-space: nowrap;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* nav current */
+#myNav-list .active {
+    color:            #F8F8F8;
+    background-color: black;
+}
+
+/* resume */
+.resume-container {
+  background-color: #A9A9A9;
+}
+
+.resume-container h1 {
+  text-align: center;
+  color: white;
+}
+
+/*projects*/
+.projects-container {
+  background-color: white;
+}
+
+.projects-container h1 {
+  text-align: center;
+}
+
+.projects {
+  justify-content: center;
+  justify-items: center;
+  margin-left: 30%;
+  margin-right: 30%;
+}
+
+.project {
+  background-color: lightgray;
+  /* color: #8FBC8F; */
+  color: white;
+  padding: 35px;
+  border-radius: 30px;
+  box-shadow: 10px 10px 5px gray;
+  margin-bottom: 30px;
+}
+
+.project:hover {
+  background-color: gray;
+}
+
+/* 
+.row {
+  display: flex;
+  width: 100%;
+  padding: 20px;
+}
+
+.row div {
+  width: 100%;
+  justify-content: center;
+  justify-items: center;
+  padding: 20px;
+}
+
+.col {
+  padding: 10px;
+} */
+
+.book-covers {
+  display: flex;
+  margin-left: 15%;
+  margin-right: 15%;
+  justify-content: center;
+  justify-items: center;
+}
+
+.books-section h2 {
+  text-align: center;
+  font-family: 'Volkhov';
+  padding: 10px;
+
+}
+
+.book-covers img {
+  width: 30%;
+  padding: 10px;
+}
+
+/* education */
+.education {
+  color: gray;
+  margin-left: 20%;
+  margin-right: 20%;
+  background-color: white;
+  padding: 30px;
+  border-radius: 30px;
+}
+
+.education-container h2 {
+  font-family: Volkhov;
+  margin-left: 20%;
+  margin-right: 20%;
+  color: white;
+}
+
+.education h3 {
+  font-family: Volkhov;
+  text-align: center;
+}
+
+.education ul{
+  margin: 20px;
+}
+
+.education:hover, .skills:hover {
+  box-shadow: 10px 10px 5px gray;
+}
+
+.education h4, .skills h4 {
+  font-family: Volkhov;
+}
+
+/* skills and interests */
+.skills-container {
+  margin-left: 20%;
+  margin-right: 20%;
+}
+
+.skills-container h2 {
+  color: white;
+  font-family: Volkhov;
+}
+
+.skills {
+  color: gray;
+  background-color: white;
+  padding: 30px;
+  border-radius: 30px;
+}
+
+.skills h4, .skills p {
+  text-align: center;
+}
