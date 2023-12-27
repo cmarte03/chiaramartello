@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Chiara Martello</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Volkhov&display=swap">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins:400,500,700&display=swap">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<script src="https://code.jquery.com/jquery-3.7.0.js"></script>
+
+<script>
+    $(document).ready(function () {
+        $('#nav1').click(function () {
+            $('html, body').animate({
+                scrollTop: $('.home-container').offset().top
+            }, 1000); 
+        });
+    });
+
+      $(document).ready(function () {
+        $('#nav2').click(function () {
+            $('html, body').animate({
+                scrollTop: $('.about-me-container').offset().top
+            }, 1000); 
+        });
+    });
+
+    $(document).ready(function () {
+        $('#nav3').click(function () {
+            $('html, body').animate({
+                scrollTop: $('.resume-container').offset().top
+            }, 1000); 
+        });
+    });
+
+    $(document).ready(function () {
+        $('#nav4').click(function () {
+            $('html, body').animate({
+                scrollTop: $('.projects-container').offset().top
+            }, 1000); 
+        });
+    });
+
+    $(document).ready(function () {
+        $('#nav6').click(function () {
+            $('html, body').animate({
+                scrollTop: $('.contact-me-container').offset().top
+            }, 1000); 
+        });
+    });
+</script>
+  <body>
+    <header>  
+        <button id="menu-button">
+          <div class="bar"></div>
+          <div class="bar"></div>
+          <div class="bar"></div>
+        </button>
+  
+        <nav class="nav-list" id="myNav-list">
+          <a class="nav-item" id='nav1'>Home</a>
+          <a class="nav-item" id='nav2'>About</a>
+          <a class="nav-item" id='nav3'>Resume</a>
+          <a class="nav-item" id='nav4'>Projects</a>
+          <a class="nav-item" id='nav6'>Contact</a>
+        </nav>
+    </header>
+    <br><br>
+    <div class="home-container">
+        <div class="home-text">
+        <br><br><br><br>
+        <h1 style="font-size: 50px">Hi! I'm Chiara Martello.</h1>
+        <h1>I'm a data science engineering major at Tufts University.</h1>
+        </div>
+    </div>
+
+    <div class="about-me-container">
+        <br><br><br><br>
+        <h1>About Me</h1>
+        <br>
+        <div class="about-me">
+            <img src="file:///Users/chiaramartello/Desktop/chiara2.png" alt="Picture">
+            <p style="font-size: 20px">I'm a sophomore at Tufts University majoring in
+                Data Science Engineering and minoring in Math. I love programming in C++,
+                making websites, and making art.</p>
+        </div>
+        <div class="books-section">
+            <h2>My favorite books from 2023</h2>
+            <div class="book-covers">
+                    <img src="file:///Users/chiaramartello/Desktop/thecolorpurple.png" alt="The Color Purple">
+                    <img src="file:///Users/chiaramartello/Desktop/eitheror.png" alt="Either/Or">
+                    <img src="file:///Users/chiaramartello/Desktop/sula.png" alt="Sula">
+                    <img src="file:///Users/chiaramartello/Desktop/hmart.png" alt="Crying in H Mart">
+                    <img src="file:///Users/chiaramartello/Desktop/neverletmego.png" alt="Never Let Me Go">
+            </div>
+        </div>
+        <br><br>
+    </div>
+
+    <div class="resume-container">
+        <br><br><br><br>
+        <h1>Resume</h1>
+        <br>
+        <div class="education-container">
+            <h2>Education</h2>
+            <br>
+            <div class="education">
+                <h3>Wellesley High School</h3>
+                <ul>
+                <h4>Relevant College Coursework</h4>
+                <li>Columbia University, Thinking & Problem Solving - A New Look at Mathematics</li>
+                <li>UVM, Computer Programming I: Python</li>
+                </ul>
+                <ul>
+                <h4>Awards</h4>
+                <li>AP Scholar with Distinction</li>
+                <li>National Honor Society</li>
+                <li>Silver Key Scholastic Art & Writing Award, Tufts SMFA, Photography</li>
+                <li>National German Honor Society</li>
+                <li>Selected Participant, McKinsey Leadership Forum</li>
+                </ul>
+            </div>
+            <br>
+            <div class="education">
+                <h3>Tufts University</h3>
+                <h3>School of Engineering</h3>
+                <ul>
+                <h4>Class of 2026</h4>
+                <li>Major: Data Science</li>
+                <li>Minor: Math</li>
+                </ul>
+                <ul>
+                <h4>Relevant Coursework</h4>
+                <p>Calc (I, II, III), Introduction to Computer Science, Data Structures, Web Programming, Physics 11</p>
+                </ul>
+                <ul>
+                <h4>Awards</h4>
+                <li>School of Engineering Dean's List: 2022, 2023</li>
+                </ul>
+            </div>
+            <br>
+        </div>
+        <div class="skills-container">
+            <h2>Skills and Interests</h2>
+            <br>
+            <div class="skills">
+                <h4>Programming Languages</h4>
+                <p>C++, Python, HTML, Javascript, CSS, PHP</p>
+            <br>
+                <h4>CAD and Adobe</h4>
+                <p>AutoCAD, Adobe Photoshop, Adobe Lightroom</p>
+            <br>
+                <h4>Language Skills</h4>
+                <p>Proficient in German</p>
+            <br>
+                <h4>Interests</h4>
+                <p>Web programming, reproductive health engineering, photography, drawing, reading</p>
+            </div>
+        </div>
+        <br>
+
+    </div>
+
+    <div class="projects-container">
+        <br><br><br><br>
+        <h1>Projects</h1>
+        <br>
+        <div class="projects">
+            <div class="row">
+            <div class="col1">
+            <div class="project" id="proj0">
+                <h2>MetroSim</h2>
+                <img src="file:///Users/chiaramartello/Desktop/c.png" alt="C++" width ="30px">
+                <br>
+                <p> C++ program that simulates action on the Green Line by
+                     monitoring a train and its passengers.</p>
+            </div>
+            <div class="project" id="proj1">
+                <h2>CalcYouLater</h2>
+                <img src="file:///Users/chiaramartello/Desktop/c.png" alt="C++" width ="30px">
+                <br>
+                <p>C++ program that implements a Reverse Polish Notation calculator.</p>
+            </div>
+            <div class="project" id="proj1">
+                <h2>Gerp</h2>
+                <img src="file:///Users/chiaramartello/Desktop/c.png" alt="C++" width ="30px">
+                <br>
+                <p> C++ program that indexes and searches files in a directory 
+                    for strings and behaves similarly to the unix grep program.
+                </p>
+            </div>
+            </div>
+            <div class="col2">
+            <div class="project" id="proj2">
+                <h2>Zap</h2>
+                <img src="file:///Users/chiaramartello/Desktop/c.png" alt="C++" width ="30px">
+                <br>
+                <p> C++ program that compresses and decompresses text files using the Huffman coding algorithm. 
+                </p>
+            </div>
+            </div>
+            </div>
+            <div class="row">
+            <div class="col1">
+            <div class="project" id="proj3">
+                <h2>Travelwise</h2>
+                <img src="file:///Users/chiaramartello/Desktop/html.png" alt="CSS" width ="30px">
+                <img src="file:///Users/chiaramartello/Desktop/css.png" alt="HTML" width ="30px">         
+                <img src="file:///Users/chiaramartello/Desktop/php.png" alt="PHP" width ="30px">         
+                <img src="file:///Users/chiaramartello/Desktop/api.png" alt="API" width ="30px">         
+                <img src="file:///Users/chiaramartello/Desktop/sql.png" alt="SQL" width ="30px">         
+                <img src="file:///Users/chiaramartello/Desktop/js.png" alt="Javascript" width ="30px">         
+                <img src="file:///Users/chiaramartello/Desktop/jquery.png" alt="jQuery" width ="30px">         
+                <br>
+                <p> Interactive and transactional website that uses an SQL database and external API to help the user plan a trip. 
+                </p>
+            </div>
+            </div>
+            <div class="col2">
+            <div class="project" id="proj4">
+                <h2>Brazil Brew Co.</h2>
+                <img src="file:///Users/chiaramartello/Desktop/html.png" alt="CSS" width ="30px">
+                <img src="file:///Users/chiaramartello/Desktop/css.png" alt="HTML" width ="30px">
+                <img src="file:///Users/chiaramartello/Desktop/js.png" alt="Javascript" width ="30px">         
+                <img src="file:///Users/chiaramartello/Desktop/jquery.png" alt="jQuery" width ="30px">
+                <p> Interactive website for a coffee shop created using HTML, CSS, Javascript, and jQuery.
+                </p>
+            </div>
+            </div>
+            </div>
+        </div>
+        <br>
+    </div>
+
+    <div class="contact-me-container">
+        <br>
+        <div class="contact-me-head">
+            <br><br>
+            <h1>Contact Me</h1>
+            <br>
+            <h3>I'd Love to Connect With You!</h3>
+        </div>
+        <div class="contact-methods-container">
+                <div class="contact-p1">
+                    <img src="file:///Users/chiaramartello/Desktop/mail.png" alt="Mail">
+                    <h2>Email</h2>
+                    <p>chiara.martello@tufts.edu</p>
+                </div>
+                <div class="contact-p1">
+                    <img src="file:///Users/chiaramartello/Desktop/linkedin.png" alt="Linked In">
+                    <h2>LinkedIn</h2>
+                    <p><a href="https://www.linkedin.com/in/chiara-martello-385bb8268/">LinkedIn Profile</a></p>
+                </div>
+        </div>
+        <br><br><br>
+    </div>
+
+    <script>
+        const menuButton = document.getElementById('menu-button');
+        
+        menuButton.addEventListener('click', function () {
+            this.classList.toggle('active');
+        });
+    </script>
+</body>
